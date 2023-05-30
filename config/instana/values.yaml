@@ -37,6 +37,6 @@ images:
   imagePullPolicy: Always
 
 storage:
-  blockClass: ibmc-block-gold
-  fileClass:  ibmc-file-gold-gid
+  blockClass: ocs-storagecluster-ceph-rbd
+  fileClass:  ocs-storagecluster-cephfs
   core_size: 100Gi

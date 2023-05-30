@@ -27,22 +27,22 @@ Define instana-datastore registry
 set datastore images 
 */}}
 {{- define "zk_image" }}
-{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/zookeeper:{{ .Values.images.registry.datastore.zookeeper}}
+{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/k8s/zookeeper:{{ .Values.images.registry.datastore.zookeeper}}
 {{- end }}
 {{- define "kafka_image" }}
-{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/kafka:{{ .Values.images.registry.datastore.kafka }}
+{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/k8s/kafka:{{ .Values.images.registry.datastore.kafka }}
 {{- end }}
 {{- define "es_image" }}
-{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/elasticsearch:{{ .Values.images.registry.datastore.elasticsearch }}
+{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/k8s/elasticsearch:{{ .Values.images.registry.datastore.elasticsearch }}
 {{- end }}
 {{- define "clickhouse_image" }}
-{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/clickhouse:{{ .Values.images.registry.datastore.clickhouse }}
+{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/k8s/clickhouse:{{ .Values.images.registry.datastore.clickhouse }}
 {{- end }}
 {{- define "postgres_image" }}
-{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/postgres:{{ .Values.images.registry.datastore.postgres }}
+{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/k8s/postgres:{{ .Values.images.registry.datastore.postgres }}
 {{- end }}
 {{- define "cassandra_image" }}
-{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/cassandra:{{ .Values.images.registry.datastore.cassandra }}
+{{ .Values.images.registry.server }}/{{ .Values.images.registry.repo }}/k8s/cassandra:{{ .Values.images.registry.datastore.cassandra }}
 {{- end }}
 
 {{/*
